@@ -15,5 +15,6 @@
     <string name="write_your_number">Write Number Here</string>
     <string name="write_your_email">Write Email Here</string>
     <string name="add_new_contact">Add New Contact</string>
+    <string name="title_activity_data_list">DataList</string>
 
 </resources>

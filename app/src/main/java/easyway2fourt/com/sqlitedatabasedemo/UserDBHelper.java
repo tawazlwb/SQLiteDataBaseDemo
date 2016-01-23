@@ -2,6 +2,7 @@ package easyway2fourt.com.sqlitedatabasedemo;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -35,6 +36,14 @@ public class UserDBHelper extends SQLiteOpenHelper {
         contentValues.put(UserContract.newUserInfo.USER_EMAIL, email);
         db.insert(UserContract.newUserInfo.TABLE_NAME, null, contentValues);
         Log.e("DATABASE CREATIONS", "One row is inserted ...");
+    }
+
+    public Cursor getInformations(SQLiteDatabase db){
+
+        Cursor cursor;
+        String[] projections = {UserContract.newUserInfo.USER_NAME, UserContract.newUserInfo.USER_MOB, UserContract.newUserInfo.USER_EMAIL};
+        cursor = db.query(UserContract.newUserInfo.TABLE_NAME, projections, null, null, null, null, null);
+        return cursor;
     }
 
     @Override

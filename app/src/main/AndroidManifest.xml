@@ -21,6 +21,10 @@
         <activity
             android:name=".AddContactActivity"
             android:label="@string/title_activity_add_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DataListActivity"
+            android:label="@string/title_activity_data_list"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

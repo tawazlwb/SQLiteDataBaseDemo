@@ -34,6 +34,11 @@ public class FirstActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void viewConstacts(View view){
+        Intent intent = new Intent(this,DataListActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

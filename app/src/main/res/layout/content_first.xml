@@ -46,6 +46,7 @@
         android:background="#f7942a"
         android:layout_marginBottom="16dp"
         android:id="@+id/id_view_contacts"
+        android:onClick="viewConstacts"
         />
 
     <Button

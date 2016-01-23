@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="easyway2fourt.com.sqlitedatabasedemo.AddContactActivity"
+    tools:showIn="@layout/add_contact_layout"
+    android:background="#5ca349"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_contact"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#864f8d"
+        android:textSize="30dp"
+        android:textIsSelectable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_contact_name"
+        android:hint="@string/write_your_name"
+        android:textColor="#864f8d"
+        android:textColorHint="#f7942a"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_contact_number"
+        android:hint="@string/write_your_number"
+        android:textColor="#864f8d"
+        android:textColorHint="#f7942a"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_contact_email"
+        android:hint="@string/write_your_email"
+        android:textColor="#864f8d"
+        android:textColorHint="#f7942a"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_contact"
+        android:textColor="#864f8d"
+        android:textSize="25dp"
+        android:background="#f7942a"
+        android:layout_marginTop="50dp"
+        android:id="@+id/id_view_contacts"
+        android:onClick="addContact"
+        />
+
+</LinearLayout>

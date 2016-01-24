@@ -58,6 +58,7 @@
         android:background="#f7942a"
         android:layout_marginBottom="16dp"
         android:id="@+id/id_search_contact"
+        android:onClick="searchContact"
         />
 
     <Button

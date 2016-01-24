@@ -16,5 +16,11 @@
     <string name="write_your_email">Write Email Here</string>
     <string name="add_new_contact">Add New Contact</string>
     <string name="title_activity_data_list">DataList</string>
+    <string name="title_activity_search_contact">SearchContact</string>
+
+    <string name="enter_name">Enter Name</string>
+    <string name="search">Search</string>
+    <string name="mobile_here">Mobile Here</string>
+    <string name="email_here">Email Here</string>
 
 </resources>

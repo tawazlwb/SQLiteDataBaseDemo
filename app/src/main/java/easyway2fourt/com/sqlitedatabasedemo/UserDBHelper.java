@@ -46,6 +46,17 @@ public class UserDBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor getContact(String userName, SQLiteDatabase db){
+
+        Cursor cursor;
+        String[] projections = {UserContract.newUserInfo.USER_MOB, UserContract.newUserInfo.USER_EMAIL};
+        String selection = UserContract.newUserInfo.USER_NAME + " LIKE ?";
+        String[] selection_args = {userName};
+
+        cursor = db.query(UserContract.newUserInfo.TABLE_NAME, projections, selection, selection_args, null, null, null);
+        return cursor;
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 

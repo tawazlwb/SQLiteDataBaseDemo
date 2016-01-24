@@ -29,6 +29,10 @@
         <activity
             android:name=".SearchContactActivity"
             android:label="@string/title_activity_search_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateContactActivity"
+            android:label="@string/title_activity_update_contact"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

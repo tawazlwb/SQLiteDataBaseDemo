@@ -44,6 +44,11 @@ public class FirstActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void updateContact(View view){
+        Intent intent = new Intent(this,UpdateContactActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

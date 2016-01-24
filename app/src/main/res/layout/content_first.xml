@@ -15,14 +15,14 @@
     android:background="#5ca349">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/my_personal_contacts"
-        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:textColor="#864f8d"
         android:textSize="35dp"
         android:textIsSelectable="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="30dp"/>
 
     <Button
@@ -70,17 +70,8 @@
         android:background="#f7942a"
         android:layout_marginBottom="16dp"
         android:id="@+id/id_update_contact"
+        android:onClick="updateContact"
         />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/delete_contact"
-        android:textColor="#864f8d"
-        android:textSize="25dp"
-        android:background="#f7942a"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/id_delete_contact"
-        />
 
 </LinearLayout>

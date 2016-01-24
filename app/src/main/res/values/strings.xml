@@ -22,5 +22,8 @@
     <string name="search">Search</string>
     <string name="mobile_here">Mobile Here</string>
     <string name="email_here">Email Here</string>
+    <string name="title_activity_update_contact">UpdateContact</string>
+
+
 
 </resources>

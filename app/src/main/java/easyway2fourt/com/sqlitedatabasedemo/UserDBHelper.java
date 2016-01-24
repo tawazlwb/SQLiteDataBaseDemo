@@ -57,6 +57,12 @@ public class UserDBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public void deleteInformations(String userName, SQLiteDatabase db){
+        String selection = UserContract.newUserInfo.USER_NAME + " LIKE ?";
+        String[] selection_args = {userName};
+        db.delete(UserContract.newUserInfo.TABLE_NAME, selection, selection_args);
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 

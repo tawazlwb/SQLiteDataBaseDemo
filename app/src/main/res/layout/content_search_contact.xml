@@ -15,7 +15,7 @@
 
     <EditText
         android:id="@+id/search_name"
-        android:layout_width="240dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:hint="@string/enter_name"
         android:layout_alignParentLeft="true"
@@ -52,5 +52,16 @@
         android:layout_below="@id/display_mobile"
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_contact"
+        android:layout_below="@+id/display_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="deleteContact"
+        android:enabled="false"
+        android:id="@+id/delete_contact"/>
 
 </RelativeLayout>
